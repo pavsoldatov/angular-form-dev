@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start:dist": "http-server ./dist//browser -o",
+    "start:dist": "http-server ./dist/angular-form-test/browser -o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
