@@ -1,3 +1,6 @@
+@import "./app/app.component.css";
+@import "./app/footer/footer.component.css";
+
 * {
   box-sizing: border-box;
   margin: 0;
