@@ -1,0 +1,23 @@
+.progress-bar__item {
+  display: flex;
+  width: 32%;
+  height: 8px;
+  border-radius: 10px;
+  margin-block: 4px;
+}
+
+.gray {
+  background-color: var(--gray-200);
+}
+
+.yellow {
+  background-color: var(--mustard-yellow);
+}
+
+.red {
+  background-color: var(--orange-red);
+}
+
+.green {
+  background-color: var(--light-green);
+}

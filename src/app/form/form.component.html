@@ -1,0 +1,28 @@
+<div class="form-section__surface">
+  <form (ngSubmit)="onSubmit()" #passwordForm="ngForm">
+    <ion-label position="stacked" for="password">Enter password:</ion-label>
+    <ion-input
+      id="password"
+      class="form-section__input"
+      type="password"
+      [(ngModel)]="password"
+      (ngModelChange)="onPasswordChange()"
+      errorText="Invalid password"
+      helperText="Password strength: {{
+        getPasswordStrength(passwordStrength)
+      }}"
+      name="password"
+      required
+      minlength="7"
+      #passwordField="ngModel"
+    >
+      <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+      <ion-input-password-toggle slot="end" />
+    </ion-input>
+    <app-progress-bar
+      [strength]="passwordStrength"
+      class="form-section__progress-bar"
+    ></app-progress-bar>
+    <ion-button expand="block" type="submit">Submit</ion-button>
+  </form>
+</div>
