@@ -1,28 +1,6 @@
 <main class="main">
-  <section class="form-section">
-    <form (ngSubmit)="onSubmit()" #passwordForm="ngForm">
-      <ion-item>
-        <ion-label position="stacked" for="password">Enter password:</ion-label>
-        <ion-input
-          class="form-section__input"
-          id="password"
-          type="password"
-          [(ngModel)]="password"
-          (ngModelChange)="logPasswordChange()"
-          helperText="Length: {{ password.length }}"
-          errorText="Password must be at least 8 characters"
-          name="password"
-          required
-          minlength="8"
-          #passwordField="ngModel"
-        >
-          <ion-input-password-toggle slot="end" />
-        </ion-input>
-      </ion-item>
-      <ion-button expand="block" type="submit">Submit</ion-button>
-    </form>
-  </section>
-  <app-footer class="footer" />
+  <app-form class="form-section"></app-form>
+  <app-footer class="footer-section"></app-footer>
 </main>
 
 <router-outlet />
